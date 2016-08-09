@@ -3,7 +3,7 @@ const {Component} = React;
 
 class Doge extends Component {
     render () {
-        return <div>Doge</div>;
+        return <div>My name is slim shady</div>;
     }
 }
 

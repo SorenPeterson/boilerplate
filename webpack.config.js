@@ -18,12 +18,13 @@ module.exports = {
                 include: path.join(__dirname, 'src'),
                 loader: 'babel',
                 query: {
-                    presets: ['react', 'es2015']
+                    presets: ['es2015', 'react', 'react-hmre']
                 }
             }
         ]
     },
     devServer: {
-        hot: true
+        hot: true,
+        contentBase: path.join(__dirname, 'public')
     }
 };
