@@ -7,4 +7,9 @@ import reducer from './reducer.js';
 
 let store = createStore(reducer);
 
-ReactDOM.render(<div>Hello</div>, document.querySelector('#anchor'));
+function render () {
+    ReactDOM.render(<div>{store.getState().message}</div>, document.querySelector('#anchor'));
+}
+
+render();
+store.subscribe(render);
