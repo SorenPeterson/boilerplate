@@ -12,9 +12,16 @@ module.exports = {
         template: path.join(__dirname, 'src/index.html')
     })],
     module: {
+        preLoaders: [
+            {
+                test: /\.jsx?$/,
+                loader: 'eslint',
+                exclude: /node_modules/
+            }
+        ],
         loaders: [
             {
-                test: /\.jsx/,
+                test: /\.jsx?$/,
                 include: path.join(__dirname, 'src'),
                 exclude: /node_modules/,
                 loader: 'babel',
