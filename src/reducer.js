@@ -1,4 +1,7 @@
-module.exports = function(state = {}, action) {
+export default function reducer(state = {}, action) {
     let {type} = action;
-    return state;
+    switch(type){
+    default:
+        return state;
+    }
 }
