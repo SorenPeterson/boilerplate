@@ -16,6 +16,7 @@ module.exports = {
             {
                 test: /\.jsx/,
                 include: path.join(__dirname, 'src'),
+                exclude: /node_modules/,
                 loader: 'babel',
                 query: {
                     presets: ['es2015', 'react', 'react-hmre']
