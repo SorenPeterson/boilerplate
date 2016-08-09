@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
+import reducer from './reducer.js';
 
-import Doge from './doge.jsx';
+let store = createStore(reducer);
 
-ReactDOM.render(<Doge />, document.querySelector('#anchor'));
+ReactDOM.render(<div>Hello</div>, document.querySelector('#anchor'));
